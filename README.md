@@ -1,6 +1,10 @@
 # YAH (yet-another-humanizer)
 
-YAH is an agent skill that makes AI-written answers, articles and video scripts read like a careful person wrote them for one specific reader. I'm tired of reading AI-generated content, even in my own Claude sessions, and the cleanup skills I tried only fix a draft that already exists. YAH settles who the reader is and which facts are real before it writes, then removes the AI tells at the end. This is just a weekend fun project! It might or might not suit your needs.
+YAH is an opiniated agent skill that makes AI-written answers, articles and video scripts read like a careful person wrote them for one specific reader.
+
+## The Motivation
+
+ I'm tired of reading AI-generated content, even in my own Claude sessions, and the cleanup skills I tried only fix a draft that already exists. YAH settles who the reader is and which facts are real before it writes, then removes the AI tells at the end. This is just a weekend fun project! It might or might not suit your needs.
 
 ## Installation
 
