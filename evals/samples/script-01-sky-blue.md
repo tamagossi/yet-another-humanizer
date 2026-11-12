@@ -124,3 +124,149 @@ The same scattering explains sunsets. When the sun is low, its light has to cros
 
 [VISUAL: a lake under blue sky, then the same lake under heavy cloud]
 As for the ocean, it works the other way around. Calm water reflects the sky above it, which is why a lake looks gray on a cloudy day. Water also absorbs a little red light, so deep water has a faint blue of its own.
+
+## humanizer output
+
+Input: the default output.
+
+### Why is the sky blue? (2-minute YouTube script)
+
+Estimated runtime: about 2 minutes (about 300 words of narration)
+
+[0:00-0:10] Hook
+
+*[Visual: Time-lapse of a bright blue sky with clouds drifting by.]*
+
+NARRATOR:
+Look up on a clear day and you'll see blue everywhere. But sunlight isn't blue. So why is the sky?
+
+[0:10-0:35] What sunlight is made of
+
+*[Visual: A beam of white light passing through a prism, splitting into a rainbow.]*
+
+NARRATOR:
+Sunlight looks white, but it's a mix of every color of the rainbow: red, orange, yellow, green, blue, and violet. Each color travels as a wave with its own wavelength. Red light has long, lazy waves. Blue and violet have short, tight ones.
+
+*[On-screen graphic: Wavelengths labeled, red ~700 nm, blue ~450 nm.]*
+
+[0:35-1:05] Rayleigh scattering
+
+*[Visual: Animation of sunlight entering Earth's atmosphere and hitting tiny gas molecules.]*
+
+NARRATOR:
+When sunlight enters our atmosphere, it runs into tiny molecules of nitrogen and oxygen. These molecules are much smaller than the wavelengths of light, and they scatter light in all directions. Shorter wavelengths get scattered much more strongly: blue light about five times more than red.
+
+*[On-screen text: "Rayleigh Scattering"]*
+
+This effect is called Rayleigh scattering, after the British physicist Lord Rayleigh. As sunlight passes through the air, blue light gets bounced all over the sky, and that scattered blue light reaches your eyes from every direction.
+
+[1:05-1:30] Why not violet?
+
+*[Visual: Split screen with a violet sky on one side and a blue sky on the other, with a question mark.]*
+
+NARRATOR:
+Wait. If shorter wavelengths scatter more, and violet is even shorter than blue, why isn't the sky purple?
+
+Three reasons. First, the sun gives off less violet light than blue. Second, some violet light is absorbed high in the atmosphere. And third, our eyes are more sensitive to blue. Put it all together, and we see a blue sky.
+
+[1:30-1:50] Bonus: sunsets
+
+*[Visual: Time-lapse of an orange and red sunset.]*
+
+NARRATOR:
+The same thing explains sunsets. When the sun is low on the horizon, its light has to travel through much more atmosphere to reach you. Most of the blue gets scattered away along the way, and the reds and oranges are what's left.
+
+[1:50-2:00] Outro
+
+*[Visual: Narrator on camera, or a shot looking up at the sky.]*
+
+NARRATOR:
+Next time you look up, you're seeing sunlight bouncing off trillions of tiny molecules. If you learned something new, hit like, subscribe, and tell me in the comments what everyday mystery we should explain next.
+
+*[End screen: Subscribe button and suggested videos.]*
+
+Production notes:
+- Keep the pacing brisk and conversational, about 150 words per minute.
+- A simple animated diagram for the scattering section will help viewers.
+- Optional: add a quick on-screen "Fun Fact" pop-up saying that on Mars, the daytime sky looks butterscotch and the sunsets look blue.
+
+## no-ai-slop output
+
+Input: the default output.
+
+### Why Is the Sky Blue? (2-Minute YouTube Script)
+
+Estimated runtime: about 2 minutes (about 300 words of narration)
+
+---
+
+[0:00 – 0:10] HOOK
+
+*[Visual: Time-lapse of a bright blue sky with clouds drifting by.]*
+
+NARRATOR:
+Look up on a clear day and you'll see it: blue. Everywhere. But sunlight isn't blue. So why is the sky?
+
+---
+
+[0:10 – 0:35] WHAT SUNLIGHT IS MADE OF
+
+*[Visual: A beam of white light passing through a prism, splitting into a rainbow.]*
+
+NARRATOR:
+Sunlight looks white, but it's a mix of every color of the rainbow: red, orange, yellow, green, blue, and violet. Each color travels as a wave, and each one has a different wavelength. Red light has long, lazy waves. Blue and violet have short, tight ones.
+
+*[On-screen graphic: Wavelengths labeled, red ~700 nm, blue ~450 nm.]*
+
+---
+
+[0:35 – 1:05] RAYLEIGH SCATTERING
+
+*[Visual: Animation of sunlight entering Earth's atmosphere and hitting tiny gas molecules.]*
+
+NARRATOR:
+When sunlight enters our atmosphere, it runs into tiny molecules of nitrogen and oxygen. These molecules are much smaller than the wavelengths of light, and they scatter light in all directions.
+
+They don't scatter every color equally. Shorter wavelengths get scattered much more strongly. Blue light is scattered about five times more than red light.
+
+*[On-screen text: "Rayleigh Scattering"]*
+
+This effect is called Rayleigh scattering, after the British physicist Lord Rayleigh. As sunlight passes through the air, blue light gets bounced all over the sky, and that scattered blue light reaches your eyes from every direction.
+
+---
+
+[1:05 – 1:30] WHY NOT VIOLET?
+
+*[Visual: Split screen with a violet sky on one side and a blue sky on the other, with a question mark.]*
+
+NARRATOR:
+Wait. If shorter wavelengths scatter more, and violet is even shorter than blue, why isn't the sky purple?
+
+Three reasons. First, the sun gives off less violet light than blue. Second, some violet light is absorbed high in the atmosphere. And third, our eyes are more sensitive to blue. Put it all together, and our brains see the sky as blue.
+
+---
+
+[1:30 – 1:50] BONUS: SUNSETS
+
+*[Visual: Time-lapse of an orange and red sunset.]*
+
+NARRATOR:
+The same thing explains sunsets. When the sun is low on the horizon, its light has to travel through much more atmosphere to reach you. Most of the blue gets scattered away along the way, and the reds and oranges are what's left.
+
+---
+
+[1:50 – 2:00] OUTRO
+
+*[Visual: Narrator on camera, or a shot looking up at the sky.]*
+
+NARRATOR:
+So the next time you look up, you're seeing sunlight bouncing off trillions of tiny molecules. If you learned something new, hit like, subscribe, and tell me in the comments what everyday mystery we should explain next.
+
+*[End screen: Subscribe button and suggested videos.]*
+
+---
+
+Production notes:
+- Keep the pacing brisk and conversational, about 150 words per minute.
+- Use a simple animated diagram for the scattering section.
+- Optional: add a quick on-screen "Fun Fact" pop-up saying that on Mars, the daytime sky looks butterscotch and the sunsets look blue.

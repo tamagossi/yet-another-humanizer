@@ -78,3 +78,54 @@ To ask for a refund or store credit, [ADD: how customers request one, such as an
 [ADD: how long a refund takes to arrive and whether it goes back to the original payment method]
 
 [ADD: how customers receive and use store credit, and whether it expires]
+
+## humanizer output
+
+Input: the default output.
+
+#### Refund policy
+
+If something isn't right with your purchase, here is how we can help.
+
+##### Refunds within 30 days
+
+You can request a full refund within 30 days of your purchase date. We issue refunds to your original payment method.
+
+##### Store credit after 30 days
+
+After 30 days we can't offer a cash refund, but we can give you store credit for the value of your purchase. You can use store credit on any future order.
+
+##### Sale items
+
+Items bought on sale or at a discount are final sale and not eligible for refunds.
+
+##### How to request a refund or store credit
+
+Contact our support team with your order number and the reason for your return. We'll tell you the next steps.
+
+##### Questions
+
+If you have questions about this policy, contact our support team.
+
+Points to settle before publishing:
+
+- Sale items and store credit: are sale items eligible for store credit, or completely final? The version above treats them as final sale.
+- Condition requirements: do items need to be unused, in original packaging, or come with a receipt?
+- Shipping costs: are original shipping fees refunded, and who pays for return shipping?
+- Processing time: how long does a refund take to appear after approval (for example, 5 to 10 business days)?
+- Store credit expiration: does store credit expire?
+- Exceptions: are defective or damaged items handled differently?
+
+## no-ai-slop output
+
+Input: the default output.
+
+### Refund Policy
+
+If you're not satisfied with your purchase, you can request a full refund within 30 days of the purchase date. We issue refunds to your original payment method.
+
+After 30 days we can't offer a cash refund, but we will give you store credit for the value of your purchase. Store credit works on any future order.
+
+Items bought on sale or at a discount are final sale and can't be refunded.
+
+To start a request, contact our support team with your order number and the reason for the return. If you have questions about this policy, contact them too.

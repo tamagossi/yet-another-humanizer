@@ -46,3 +46,15 @@ Couldn't fix without more information:
 
 - "connects your team and changes how you work together" keeps the original's "connects your team" and "game changer", but a reader can't check either. Say what the integration does (for example, which updates it posts to which Slack channels) and one thing a team can now do that it couldn't before.
 - I cut "fostering collaboration, boosting productivity, and driving results" along with the opening and closing lines. If you have a number for any of those three, add it back as its own sentence.
+
+## humanizer output
+
+Input: the original text in the prompt.
+
+Our new Slack integration connects your team. Since launching in May, over 300 teams have adopted it.
+
+## no-ai-slop output
+
+Input: the original text in the prompt.
+
+Our new Slack integration connects your team. Since it launched in May, over 300 teams have adopted it.

@@ -55,3 +55,27 @@ The rest of this talk is how we got from eighteen minutes to seven.
 ---
 
 This runs about 30 seconds spoken, roughly half of 150 words. Those three facts don't fill more without padding. To reach 150, send me why you left Jenkins, the hardest part of the four months, and whether anything got worse after the move.
+
+## humanizer output
+
+Input: the default output, plus the writing sample.
+
+Short version: we moved our CI from Jenkins to GitHub Actions, and it was worth it. Mostly.
+
+It took four months, not the four weeks I'd confidently promised. We had 120 pipelines, each with its own quirks and its own undocumented shell script that someone was scared to touch. Some were easy. Some were not. A few we just deleted, and nobody noticed.
+
+The payoff was real, though. Average build time went from 18 minutes to 7, so developers get feedback before they've wandered off to get coffee.
+
+This talk covers what we got wrong, what we'd do differently, and how to tell whether the move makes sense for you at all.
+
+## no-ai-slop output
+
+Input: the default output, plus the writing sample.
+
+Short version: we moved our CI from Jenkins to GitHub Actions, and it was worth it. Mostly.
+
+It took four months. Not the four weeks I'd confidently promised. We had 120 pipelines, and every one of them had its own quirks, its own undocumented shell script, its own reason someone was scared to touch it. Some were easy. Some were not. A few we just deleted, and nobody noticed.
+
+The payoff was real, though. Average build time went from 18 minutes to 7, which means developers get feedback before they've wandered off to get coffee.
+
+Jenkins wasn't the villain and Actions isn't magic. This talk covers what we got wrong, what we'd do differently, and how to tell if the move makes sense for you. Or doesn't.

@@ -63,3 +63,15 @@ Couldn't fix without more information:
 - "makes many teams significantly more productive": give the measure and its source, such as hours saved per week or a result from a named customer, and how many teams.
 - "Industry leaders trust it": name two or three customers you have permission to show, or give a customer count.
 - "users love its features": name the one or two features people pick Acme Notes for, and back "love" with a real customer quote or a review rating if you have one.
+
+## humanizer output
+
+Input: the original text in the prompt.
+
+Acme Notes plans start at $8 per user per month.
+
+## no-ai-slop output
+
+Input: the original text in the prompt.
+
+Acme Notes plans start at $8 per user per month.
