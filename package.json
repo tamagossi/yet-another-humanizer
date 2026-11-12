@@ -1,0 +1,22 @@
+{
+  "name": "yet-another-humanizer",
+  "version": "0.1.0",
+  "description": "YAH: an opinionated agent skill that makes AI-written answers, long-form writing and video scripts read like a careful person wrote them.",
+  "license": "MIT",
+  "author": "tamagossi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamagossi/yet-another-humanizer.git"
+  },
+  "homepage": "https://github.com/tamagossi/yet-another-humanizer",
+  "keywords": ["pi-package", "agent-skill", "claude-code", "writing", "humanizer"],
+  "pi": {
+    "skills": ["./skills"]
+  },
+  "files": ["skills/", ".claude-plugin/", "README.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "version:sync": "node scripts/sync-version.mjs",
+    "test": "node --test \"scripts/*.test.mjs\"",
+    "check": "node scripts/sync-version.mjs --check && node scripts/check-readme.mjs && claude plugin validate ."
+  }
+}

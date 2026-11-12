@@ -1,0 +1,14 @@
+{
+  "name": "yet-another-humanizer",
+  "description": "YAH: an opinionated skill for answers, writing and video scripts that read like a person wrote them.",
+  "owner": {
+    "name": "tamagossi"
+  },
+  "plugins": [
+    {
+      "name": "yah",
+      "source": "./",
+      "description": "Makes AI-written answers, long-form writing and video scripts read like a careful person wrote them for one reader."
+    }
+  ]
+}
