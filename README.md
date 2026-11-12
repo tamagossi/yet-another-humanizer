@@ -261,11 +261,11 @@ The sample set in [`evals/`](evals/) has 14 cases across the three modes, each w
 
 | | Default | YAH |
 |---|---|---|
-| Cases with invented specifics | 9 of 14 | 3 of 14 |
-| Invented specifics in all | 44 or more | 3 |
-| Cases that did what the case asked | | 12 pass, 2 partial |
+| Cases with invented specifics | 9 of 14 | 0 of 14 |
+| Invented specifics in all | 44 or more | 0 |
+| Cases that did what the case asked | | 13 pass, 1 partial |
 
-The three YAH slips are small unsupplied claims written as the user ("changes stay small", a motive in a newsletter post, a claim about top search results), which is the failure YAH exists to prevent. [`evals/RESULTS.md`](evals/RESULTS.md) lists them with the other known problems. A blind read by people hasn't been run yet, so this README makes no claim about which version readers prefer.
+The first review of 0.1.0 found three small unsupplied claims in YAH's output, written as the user ("changes stay small", a motive in a newsletter post, a claim about top search results). 0.1.1 tightened the rule and I re-ran those three cases. I rechecked them myself, not the independent reviewer, and one mild slip remains ("I haven't tested any specific models", written as the author). [`evals/RESULTS.md`](evals/RESULTS.md) lists it with the other known problems. A blind read by people hasn't been run yet, so this README makes no claim about which version readers prefer.
 
 ## Credits
 

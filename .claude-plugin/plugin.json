@@ -1,6 +1,6 @@
 {
   "name": "yah",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Makes AI-written answers, long-form writing and video scripts read like a careful person wrote them for one reader.",
   "author": {
     "name": "tamagossi"
@@ -8,5 +8,11 @@
   "homepage": "https://github.com/tamagossi/yet-another-humanizer",
   "repository": "https://github.com/tamagossi/yet-another-humanizer",
   "license": "MIT",
-  "keywords": ["writing", "humanizer", "ai-writing", "editing", "video-script"]
+  "keywords": [
+    "writing",
+    "humanizer",
+    "ai-writing",
+    "editing",
+    "video-script"
+  ]
 }

@@ -15,7 +15,7 @@ Before drafting, note how the writer actually writes:
 
 ## Write in that voice
 
-Match those traits at about the same rate. In a short output, use each strong habit at least once if the writer would. The sample beats YAH's default style rules and the tell catalog wherever they conflict: if the writer uses dashes, keep dashes; if they open with "Look,", end on a blunt fragment, or write in lowercase, that's their voice, not a tell. The tell pass still removes patterns the sample doesn't show.
+Match those traits at about the same rate. In a short output, use each strong habit at least once if the writer would. The sample beats YAH's default style rules and the tell catalog wherever they conflict: if the writer uses dashes, keep dashes; if they open with "Look,", end on a blunt fragment, or write in lowercase, that's their voice, not a tell. The tell pass still removes patterns the sample doesn't show. For anything the sample doesn't show, such as capitalizing a day or a name in an all-lowercase voice, use normal conventions.
 
 The sample never overrides the fact rules. Their voice, your facts: only what the user or the source supplied.
 

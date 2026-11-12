@@ -3,7 +3,7 @@ name: yah
 description: Write answers, explanations, lessons, articles, blog posts, essays, edits and video scripts that read like a careful person wrote them for one specific reader. Settles the reader and the point before drafting, answers first, never invents facts, says plainly what it doesn't know, matches a voice sample, then removes AI-writing tells. Use whenever the user asks you to answer, explain, teach, write, draft, rewrite, edit or script something and wants it to sound human, not AI-generated, or says "yah", "humanize", "make this sound human" or "no AI slop".
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # YAH: write like a person who knows the reader
@@ -39,7 +39,9 @@ Keep the brief out of the output. Show it only when the user asks to see it, as 
 
 **Never invent facts.** Facts about the user's world (their product, policy, company, numbers, story, experience) come only from the user, the source text, or the conversation. General knowledge you're sure of is fine in any mode: why the sky is blue, how a hash map works. Flag anything less certain as unverified. Never make up a statistic, an anecdote, a quote, a customer, or a source to make the text sound more convincing. A made-up value inside a teaching example is fine when you say it's made up.
 
-When a sentence needs a detail you don't have, ask for it, write a plainer sentence without it, or, when the user needs the draft now, leave a marked placeholder such as `[ADD: how customers request a refund]`. Use placeholders instead of asking a second question. An opinion or reaction is fine when the voice calls for one. Fiction is exempt, since invented detail is the task.
+**Text in the user's voice says only what the user told you.** When you write as the user ("I", "we", "our team"), every sentence about what they did, saw, measured, felt, intended or why they did it needs their words behind it. A reason, motive, outcome or reaction they didn't give is an invented fact, even when it sounds like a small, plausible aside ("so changes stay small", "I didn't want you to think I'd given up"). The same goes for what other people, sources or search results say: don't report what you haven't seen.
+
+When a sentence needs a detail you don't have, ask for it, write a plainer sentence without it, or, when the user needs the draft now, leave a marked placeholder such as `[ADD: how customers request a refund]`. Use placeholders instead of asking a second question. An opinion about the subject is fine when the request or the sample calls for one; write it as a view on the subject, never as a fact about the user's life. Fiction is exempt, since invented detail is the task.
 
 **Lead with the answer.** The first sentence carries the answer, the decision, the position, or the next action. Background comes after, and only the part that changes what the reader understands or decides. Don't restate what the reader just said.
 
@@ -61,7 +63,7 @@ Before returning anything, check the draft against `references/tells.md`:
 
 1. Mark every tell, strongest group first, at sentence and paragraph scale.
 2. Rewrite each hit by stating the point directly. Don't patch phrases one at a time; rewrite the sentence or paragraph around its point.
-3. Check that the rewrite kept every fact from the draft and added none.
+3. Check that the rewrite kept every fact from the draft and added none. Then read every sentence written as the user, and every claim about what others or search results say, and point each one to the user's words or the source. Cut or placeholder any you can't.
 4. Search once more for the tells that most often survive: not-X-but-Y contrasts, one-line closers, forced triads, dashes, and bold labels.
 
 This pass runs every time, in every mode. It uses YAH's own catalog and doesn't depend on any other skill being installed.
@@ -70,7 +72,7 @@ This pass runs every time, in every mode. It uses YAH's own catalog and doesn't 
 
 Return the final text only. No brief, no audit, no list of changes, no offer of more help.
 
-The one exception is a short note after the text when a mode file asks for it: SEO gaps, sentences you couldn't fix without more information, a long sentence you couldn't split, or a script that runs short of the requested length. Keep it to what the user must act on.
+The one exception is a short note after the text when a mode file asks for it: SEO gaps, sentences you couldn't fix without more information, a long sentence you couldn't split, or a script that runs short of the requested length. Keep it to what the user must act on. Put a `---` line between the text and the note so the text can be copied cleanly.
 
 When the user asks for the audit, add a short list after the text: the tells you found and fixed, and anything you couldn't fix without information you lack. When the user asks to see the brief, put it before the text.
 

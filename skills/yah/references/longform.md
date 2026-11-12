@@ -29,7 +29,7 @@ Check the draft for:
 3. **Value beyond rewording:** would it still be worth reading if the reader had seen the sources it draws on?
 4. **An honest title:** does the title describe the piece without exaggerating or baiting?
 
-Report each gap after the draft, with what would close it: "No first-hand data. Add your own load-test numbers from the migration." Never add repeated keywords to the text, and don't promise rankings.
+Report each gap after the draft, with what would close it: "No first-hand data. Add your own load-test numbers from the migration." Judge the draft by what it contains, never by how it compares to search results or other articles you haven't read. Write "this draft has no original data", not "this matches what the top results say". Never add repeated keywords to the text, and don't promise rankings.
 
 ## Editing existing text
 

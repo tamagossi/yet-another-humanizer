@@ -63,34 +63,24 @@ Start with a well-structured monolith. Keep it modular. Split things off only wh
 
 ### Small teams should skip microservices
 
-If your whole engineering team fits around one table, keep your backend in one app. I lead backend at a six-person startup, and we tried it the other way. Last year we split our monolith into nine services. In March we merged them back into one app, and deploys went from about 40 minutes to 8.
+If your whole engineering team fits in one standup, run your backend as one app. I lead backend at a six-person startup. Last year we split our monolith into nine services. In March we merged them back into one app, and deploys went from about 40 minutes to 8.
 
-#### Why we split
+[YOUR EXPERIENCE: why you split the monolith last year, who pushed for it, and what you expected to gain]
 
-[YOUR EXPERIENCE: why you split the monolith last year, for example a scaling worry, a pattern someone brought from a bigger company, or advice you read, and who made the call]
+Microservices fix a problem between teams. When dozens of engineers share one codebase, they get in each other's way: one team's half-finished change holds up another team's release, and a deploy needs sign-off from people who have never read the code it ships. Splitting the system along team lines lets each team own a service and release on its own schedule.
 
-#### What nine services cost six people
+That independence has a price. A function call becomes a network call that can time out or get a response the caller didn't expect. Each service needs its own build, deploy pipeline, logs and alerts. A feature that touches three services needs three changes, deployed in the right order, and a contract all three agree on. Large companies pay that price because the alternative, forty people queuing behind one release, costs them more.
 
-Every service needs its own build, deploy pipeline, configuration, logs and alerts. At a large company a platform team carries that work. On a team of six, it lands on the same people who are supposed to be shipping the product.
+A six-person team doesn't have that queue. Six people can agree on a release by talking to each other, so splitting the code buys almost nothing, and you still pay every cost above. You pay it with fewer hands, too. On a team that small, whoever builds features also maintains every pipeline and chases every failed call between services.
 
-A change that touches two services stops being one pull request. You change the API, release the service that provides it, release the service that calls it, and keep the old and new versions working in between. Inside one app, the same change is an edited function signature and a single deploy.
+[YOUR EXPERIENCE: one specific time the nine services slowed you down, such as a change that had to be deployed across several services in order, or an incident that started in a call between two of them]
 
-Running the product on a laptop gets harder too. Someone has to maintain the script or compose file that starts every service with the right ports and environment variables, and keep it working as the services change.
+Our deploys now take about 8 minutes, down from about 40. [ADD: how often you deploy, so readers can see what the saved time adds up to over a week]
 
-Bugs get harder to trace. A function call becomes a network call, which can time out or fail halfway, and the error you see in one service often started in another.
+Deploy time shapes habits. When a deploy takes 40 minutes, people tend to bundle changes so they wait less often, and a big bundle is harder to debug when something breaks. At 8 minutes, shipping one small change and watching it is cheap enough to do several times a day.
 
-[YOUR EXPERIENCE: one bug or release from the nine-service year that showed this cost, with roughly when it happened and how long it took to sort out]
+[YOUR EXPERIENCE: how long the merge back took and the hardest part of it]
 
-#### What merging back changed
+You can keep clean boundaries inside one app. Give each area of the product its own module with a small public interface, and don't let modules read each other's tables. You get one build and one deploy, and if a module later needs its own team or its own scaling, the seam to cut along is already there.
 
-Our deploys dropped from about 40 minutes to 8. [ADD: what made the old deploys take 40 minutes, for example nine pipelines running in sequence, and what the single deploy does instead]
-
-With 8-minute deploys, shipping a small change is cheap, so changes stay small. When something breaks in production, the fix goes out in minutes instead of most of an hour.
-
-[YOUR EXPERIENCE: how long the merge back took, and anything that got harder after it, if anything did]
-
-#### When services are worth it
-
-Services pay off when separate teams need to release on their own schedules, or when one part of the system has to scale very differently from the rest. The first problem arrives with headcount. The second arrives with load you can measure. A team of six usually has neither.
-
-You can still draw clear boundaries between modules inside one codebase and pay for only one deploy. If you're a small team weighing a split, write down the specific problem it would solve, then check whether a module boundary inside your current app solves it first.
+Split a service out when you can name the reason. Good reasons are a second team that keeps waiting on the first team's releases, or a component with very different needs, like a CPU-heavy worker that should scale separately from the API. Before you split, ask who will own the new service. If the answer is the same six people, keep one app.

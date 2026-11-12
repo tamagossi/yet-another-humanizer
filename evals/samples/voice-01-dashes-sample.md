@@ -44,8 +44,6 @@ Want me to make it shorter, add a bit more humor, or tweak the reason for the sw
 
 ## YAH output
 
-heads up. the newsletter moves from tuesday to thursday, starting 3 december.
+heads up: the newsletter is moving from Tuesday to Thursday. first Thursday issue goes out 3 December.
 
-that's the whole post — I just didn't want you opening your inbox on a tuesday, finding nothing, and assuming I'd given up.
-
-if thursday is worse for you, reply and say so. bluntly is fine.
+if you've got a filter, a folder or a Tuesday-morning reading habit built around it — sorry — shift it two days later.

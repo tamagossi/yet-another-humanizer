@@ -254,51 +254,67 @@ Ready to upgrade your workspace? Use the checklist above to compare models, and 
 
 ## YAH output
 
-### How to choose a standing desk
+### How to choose a standing desk: height range, stability and size first
 
-Choose a standing desk on two checks: its height range has to fit your body, and it has to stay steady at your standing height. Motors, presets and desktop finishes matter less, and you can decide them once a desk passes both checks.
+Buy the desk whose height range fits your body at both positions, that doesn't wobble when you type standing up, and whose top fits your monitors and elbows. Everything else (app control, bamboo versus laminate, a drawer) is secondary. If a desk fails on height range or stability, no feature list rescues it.
 
-[YOUR EXPERIENCE: the standing desk you use, how long you've had it, and what you'd check differently if you bought again]
+#### Start with your height range
 
-#### Measure yourself before you shop
+A standing desk is only useful if it reaches two heights: one where you sit with your forearms level, and one where you stand with your forearms level. The usual rule is that your elbows sit at about 90 degrees with your wrists straight, so measure the distance from the floor to your elbow in both positions, wearing the shoes and sitting on the chair you actually use.
 
-Stand in the shoes you usually wear, let your shoulders relax, and bend your elbows to about 90 degrees. Measure from the floor to the underside of your forearm. That's roughly the height your desktop should reach when you stand. Do the same sitting in your chair to get your seated height.
+Those two numbers are your minimum and maximum. Compare them with the desk's listed range, and remember the range is usually measured to the top surface, so a keyboard tray or a thick desktop changes the math. People at the short or tall ends of the height distribution are the ones most often caught out, because many desks are built around an average range. If you're tall, check the maximum height first. If you're short, check the minimum, since a desk that won't go low enough pushes your shoulders up while you sit.
 
-Every desk lists a height range, and both of your numbers need to fall inside it. Tall people usually run into the top of the range and short people into the bottom, so read the end that applies to you.
+[YOUR EXPERIENCE: the two measurements you took (seated and standing elbow height), your height, and which desk range you ended up needing]
 
-#### Test for wobble at your height
+#### Check stability at full height
 
-A desk is steadiest at its lowest setting and wobbles most when fully raised. The taller you are, the closer you stand to that top setting, so test stability at your own standing height.
+Wobble shows up at the top of the range, where the legs are extended furthest. A desk can feel solid at sitting height and shake when you type at standing height. Desks with more telescoping sections per leg generally reach a wider range, and the extra joints are where flex tends to come from. Check these before buying:
 
-In a store, raise the desk to your height, then type hard and push the edge from side to side. Online, look for reviews that describe wobble at a stated height, and for frames with a crossbar between the legs and wide feet.
+- The listed maximum load, and whether it counts the desktop itself.
+- The frame type and the leg thickness.
+- Whether the crossbar and feet are wide enough for the desktop you chose.
+- Reviews or videos that show the desk at its tallest, not just at sitting height.
 
-[YOUR EXPERIENCE: desks you've tested for wobble, the height you tested at, and what you saw on screen while typing]
+Dual-motor frames are generally the more stable and faster option than single-motor ones, though I haven't tested any specific models, so treat that as a general pattern and check the one you're considering.
 
-#### Check the lifting capacity against your setup
+[YOUR EXPERIENCE: how the desk you use behaves at full height, for example whether a monitor arm or a laptop on the desk makes it shake, with the model name]
 
-Add up what will sit on the desk: monitors, monitor arms, the computer, speakers. Compare the total with the frame's rated load and leave some margin. Dual-motor frames usually carry more weight than single-motor frames and lift more evenly.
+#### Pick a desktop that fits your monitors
 
-If you plan to use a monitor arm, check that the desktop is thick enough for its clamp.
+Width decides how much room you have for a monitor, a laptop and a mouse. Depth decides how far the screen sits from your eyes, and a deeper desk gives you more room to push the screen back. A common guide is to sit about an arm's length from the screen, so if you use a large or ultrawide monitor, a very shallow desktop will push you close to it. Measure your space and your monitor stand, and check the desk's real dimensions, not its size category.
 
-#### Size the desktop and plan the cables
+Material changes weight, price and how the desk feels under your forearms. Solid wood and bamboo look good but cost more and are heavier; laminate and MDF are cheaper. A heavier desktop also eats into the frame's load capacity. If you want a monitor arm clamped to the back, check that the desktop edge is thick enough to hold the clamp.
 
-Measure the floor space, and measure your monitors side by side, before picking a desktop size. Cables move every time the desk rises, so leave slack behind it and use a cable tray or cable chain to keep cords from snagging or pulling a plug out.
+[YOUR EXPERIENCE: what desktop size and material you chose, what you put on it, and what you'd change]
 
-#### Features that matter less
+#### Decide which features you'll use
 
-Memory presets let you tap a button instead of holding one while the desk moves. You'll use them if you switch positions several times a day. Anti-collision sensors stop the desk when it hits something, which helps when a chair, shelf or windowsill sits close by.
+Memory presets are worth having, because you'll want to switch heights without holding a button and guessing. Collision detection, which stops the desk when it hits something, protects your chair arms and a drawer unit. Cable management, a USB port in the controller, and app control are conveniences, and I wouldn't pay extra for them before the range and stability above are settled.
 
-#### Converter or full desk
+Noise and speed vary between frames, and the listed numbers come from the manufacturer's own testing, so I'd read independent measurements before trusting them. If you work in a shared space, noise matters more than it does at home.
 
-A desktop converter sits on the desk you already have and lifts your keyboard and monitor. If you go this way, check that the keyboard platform reaches your standing elbow height without pushing the monitor too high, and that the converter fits the depth of your current desk.
+#### Check warranty and return terms
 
-Once a desk or converter passes the height and wobble checks, choose between the rest on price and warranty, especially the warranty on the motor and frame.
+A desk with a motor, a control box and a lot of moving parts is more likely to need a repair than a fixed desk. Look at how long the frame, the motor and the electronics are covered, whether they're covered separately, and what the return window is. Check who pays for return shipping on something this heavy. I can't tell you the typical figures without checking specific brands, so read the terms for each one you're considering.
+
+#### Plan to move, not just stand
+
+Standing all day isn't the goal. Most guidance on sit-stand desks recommends switching between positions through the day, and standing for long stretches can cause its own discomfort in feet and legs. An anti-fatigue mat and supportive shoes are cheap ways to make standing easier. Set a first standing period of a short stretch and extend it as it gets comfortable. [YOUR EXPERIENCE: your own schedule for sitting and standing, and how long it took before standing felt comfortable]
+
+#### Before you buy
+
+1. Measure your seated and standing elbow heights.
+2. Find the maximum and minimum height of each desk you're considering and check both against your numbers.
+3. Look for evidence of stability at full height, such as reviews or videos that show it.
+4. Measure the space and the monitor, then compare with the desktop's width and depth.
+5. Read the warranty and return terms.
 
 ---
 
-SEO gaps:
+Gaps to close before publishing:
 
-- First-hand experience: none yet. Fill the two placeholders with the desk you use and your own wobble tests, including the heights you tested at.
-- Original information: the advice matches what the top results already say. Measured data would close this, such as listed height ranges against your own elbow heights, or wobble at full height for desks you've tried, with a photo or short video.
-- Value beyond rewording: depends on the two gaps above. Without them the post is a summary of common advice.
-- Title: honest as written.
+- No first-hand experience. Fill the five [YOUR EXPERIENCE] placeholders with your own measurements, desk and results, or cut the ones you can't back up.
+- No original information. This draft is a buying checklist built from general knowledge, with no tested models, prices, noise measurements or comparison data. Add your own tests or numbers, or name specific desks you've used.
+- Nothing is sourced. The elbow-angle rule, the arm's-length distance and the advice to alternate sitting and standing are general guidance I haven't verified against a named source. Cite one (an ergonomics body or the desk makers' guides) or soften them.
+- Dual-motor stability, leg-section wobble and the material comparisons are general patterns, marked as such in the text. Confirm them for the models you cover.
+- The title describes the piece without baiting. No keyword was repeated for search, and no ranking is promised. Add your target search phrase to the title or meta description yourself if it differs from this one.

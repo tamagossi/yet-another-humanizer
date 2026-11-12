@@ -1,6 +1,8 @@
-# Results: YAH 0.1.0
+# Results: YAH 0.1.1
 
 The outputs were generated on 2026-11-12 by Claude Opus 5.5 subagents and reviewed by another subagent, not a human. No blind read has been run yet.
+
+After the first review (0.1.0), three cases had small invented claims. 0.1.1 tightens the fact rule for text written in the user's voice, and those three cases (longform-01, longform-02, voice-01) were re-run and rechecked by the same session that wrote the skill, not by the independent reviewer. The other 11 cases are the 0.1.0 outputs, unchanged, because the edits did not touch their rules.
 
 Invented facts counts specifics that are not in the prompt and are presented as fact about the user's world or as unverified data. Labeled examples and well-established general knowledge are not counted. Tell IDs refer to `skills/yah/references/tells.md`.
 
@@ -14,13 +16,13 @@ Invented facts counts specifics that are not in the prompt and are presented as 
 | answers-04-make-it-simpler | 0 | 0 | A5 (borderline) | pass |
 | answers-05-reuse-example | 0 | 0 | none | pass |
 | answers-06-unknown-part | 3 | 0 | none | pass |
-| longform-01-position | 9 | 1 | B2 (weak) | partial |
-| longform-02-seo | 12+ | 1 | none | pass |
+| longform-01-position | 9 | 0 | B2 (weak) | pass |
+| longform-02-seo | 12+ | 0 (one mild, see below) | none | pass |
 | longform-03-edit | 2 | 0 | C1 (weak, flagged by YAH) | pass |
 | longform-04-edit-missing-info | 3 | 0 | C4 (kept and flagged) | pass |
 | script-01-sky-blue | 0 | 0 | none | pass |
 | script-02-cold-brew | 2 | 0 | A1 (weak) | pass |
-| voice-01-dashes-sample | 4 | 1 | none | pass |
+| voice-01-dashes-sample | 4 | 0 | none | pass |
 | voice-02-talk-intro | 4 | 0 | A6 | partial |
 
 ## Per case
@@ -77,19 +79,20 @@ Invented facts counts specifics that are not in the prompt and are presented as 
 
 ### longform-01-position
 
-- YAH uses the supplied facts (6 people, 9 services, March merge, 40 to 8 minutes) and puts the position in the first sentence.
-- Invented 1: "shipping a small change is cheap, so changes stay small" sits under "What merging back changed" and reads as the author's observed outcome, which the prompt does not give.
-- Stretch: "6-person startup" becomes "six people" on the engineering team ("If your whole engineering team fits around one table", "On a team of six"). The prompt does not say all six are engineers.
-- YAH tells: B2 (weak), the stacked parallel lines "The first problem arrives with headcount. The second arrives with load you can measure. A team of six usually has neither." and two paragraphs built on "gets harder". The 40 to 8 fact is repeated verbatim from the opening.
+- 0.1.1 re-run. YAH uses the supplied facts (6 people, 9 services, March merge, 40 to 8 minutes) and puts the position in the first sentence.
+- The 0.1.0 invented outcome ("changes stay small") is gone. The merge-back story is now a placeholder: "[YOUR EXPERIENCE: how long the merge back took and the hardest part of it]". A general claim about habits ("people tend to bundle changes") is framed as a general pattern, not as the author's experience.
+- Stretch that remains: "6-person startup" is treated as a six-person engineering team ("If your whole engineering team fits in one standup", "A six-person team"). The prompt does not say all six are engineers.
+- Tells: the 0.1.0 B2 stacked-parallel-lines pattern was not found on a quick read of the re-run; this was not checked line by line.
+- Notes: the output has 4 placeholders for the author's experience and 1 [ADD] for deploy frequency.
 - Default invented about 9 first-person details: Netflix and Uber as motivation, an "unwieldy" monolith, features touching "three or four" services, retries and tracing work, slower new hires, shared Slack channels, a container stack on laptops, kept module boundaries, one-command onboarding. Tells: A1 ("isn't technical. It's organizational."), A4 ("Here's what I wish someone had told us"), A5 ("That's the key:"), A2 ("We learned that the hard way, so you don't have to."), B2 ("Netflix did it. Uber did it."), D1, D2, E5 ("The Bottom Line"), about 8.
-- Case check partial: position and placeholders are right, but one outcome claim is not from the supplied facts.
+- Case check pass on the 0.1.1 re-run (0.1.0 was partial because of the invented outcome).
 
 ### longform-02-seo
 
-- YAH gives no specs, prices, decibel levels or warranty lengths; the only number is the general 90 degree elbow rule.
-- Invented 1: the SEO gap note says the advice "matches what the top results already say" with no search shown, so it is an unverified claim about search results.
-- Two [YOUR EXPERIENCE] placeholders and a gap report after the draft; no keyword stuffing; no meta block.
-- YAH tells: none found. The gap list uses plain labels that carry information, not D1.
+- 0.1.1 re-run (second pass, after the SEO section of longform.md was changed to judge the draft by what it contains). YAH gives no specs, prices, decibel levels or warranty lengths; the numbers it uses are the general elbow-angle rule and the arm's-length guide, and it says it has not verified them against a named source.
+- The first 0.1.1 re-run still wrote a gap note that compared the draft with "what top results already cover", an unverified claim about search results. The edit to longform.md removed it. The final output's note judges the draft by what it contains (no first-hand experience, no original information, nothing sourced), and its count of five [YOUR EXPERIENCE] placeholders matches the text.
+- Mild issue: the text speaks as the author in two places ("I haven't tested any specific models", "I wouldn't pay extra for them"). The first asserts something about the author's experience that the prompt does not give. Counted as 0 invented specifics, but it is the same kind of slip.
+- Tells: none found on a quick read. No keyword stuffing and no meta block.
 - Default: 12 or more unsourced specs and prices presented as fact (25 to 50 in height range, 6'2" and 5'4" cutoffs, 150 to 200 lb and 250 lb capacities, desk widths, 24 and 30 in depth, 45 to 50 dB, 1 to 1.5 in/s, a $150 to $600+ price table, 5 to 15 and 3 to 5 year warranties, 30 to 60 minute standing intervals). Tells: C4 ("Most ergonomic experts recommend", "Many people report"), A1, A5 ("And for good reason:"), C5 ("the perfect standing desk"), D1, D2, E4 ("This guide walks you through"), E5 ("Final Thoughts"), E1 ("Ready to upgrade your workspace?"), about 9.
 - Case check pass.
 
@@ -130,8 +133,9 @@ Invented facts counts specifics that are not in the prompt and are presented as 
 
 ### voice-01-dashes-sample
 
-- YAH matches the sample: lowercase openings, capital "I", blunt close ("bluntly is fine."), one em dash in 48 words against the sample's two in about 45, which is within the sample's rate.
-- Invented 1 (mild): the motive "I just didn't want you opening your inbox on a tuesday, finding nothing, and assuming I'd given up" is attributed to the user without support. It does not invent a reason for the schedule change, which is better than the default.
+- 0.1.1 re-run. YAH matches the sample: lowercase sentence starts, a spaced em dash pair as in the sample, and 3 December is a Thursday, so "first Thursday issue goes out 3 December" is consistent with the prompt.
+- The 0.1.0 invented motive ("assuming I'd given up") is gone. The 0.1.1 text gives no reason for the move and addresses readers conditionally ("if you've got a filter, a folder or a Tuesday-morning reading habit built around it"), which is a hypothetical about readers, not a claim about the user.
+- Open question: the output capitalizes Tuesday, Thursday and December although the sample is lowercase. The rule added in 0.1.1 says to use normal conventions for what the sample does not show, but the sample does show lowercase starts, so this is a judgment call.
 - YAH tells: none counted. The dash is allowed by the sample.
 - Default invented 4: three reasons for the move ("tuesdays kept sneaking up on me", "the week had already eaten me alive", writing "at 1am") and "nothing else changes". It also reuses the sample's closing line almost word for word. Tells: E1 (two), A4 ("why?"), B1 ("same newsletter, same me, just two days later"), about 3.
 - Case check pass. Whether the sample was stored cannot be checked from the output.
@@ -147,7 +151,7 @@ Invented facts counts specifics that are not in the prompt and are presented as 
 
 ## What YAH still gets wrong
 
-1. Small unsupplied claims still slip into text written as the user. "changes stay small" (longform-01), the "assuming I'd given up" motive (voice-01) and the claim about top search results (longform-02) are each minor, but they are the exact failure YAH exists to prevent, and they read as first-hand fact.
+1. Small unsupplied claims can still slip into text written as the user. 0.1.0 had three ("changes stay small" in longform-01, the "assuming I'd given up" motive in voice-01, the claim about top search results in longform-02); 0.1.1 fixed them in the re-run, with one more edit needed for the search claim. The longform-02 re-run still says "I haven't tested any specific models" as the author. Each is minor, but it is the exact failure YAH exists to prevent, and three re-runs of three cases is not proof the rule holds.
 2. Voice matching copies surface features and misses the defining move. voice-02 reuses "Short version:" and short sentences but drops the self-correction that makes the sample sound like its writer.
 3. Length requests go unmet and the gap is handed back to the user. voice-02 delivers about 80 of 150 words and script-02 about 2:20 of 3:00; in script-02 general how-to content could have filled the time without inventing numbers.
 4. Edits that lack data return near-copies of the original. longform-04 keeps "significantly more productive" and "Industry leaders trust it" on a landing page, and longform-03 keeps "changes how you work together". The notes are good, but the delivered text is not usable until the user acts, and longform-04 drops "robust" without saying so.
